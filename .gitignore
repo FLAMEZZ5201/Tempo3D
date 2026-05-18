@@ -1,0 +1,34 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Weights and checkpoints
+weights/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Outputs
+*.glb
+*.obj
+*.ply
+outputs/
+
+# Environment
+.env
+*.env
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter
+*.ipynb_checkpoints/
+
+# Project page (separate repo)
+project_page/

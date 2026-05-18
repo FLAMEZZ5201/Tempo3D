@@ -1,0 +1,70 @@
+# PyTorch must be installed separately with the correct CUDA version:
+# pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu124
+
+# Build Tools
+ninja==1.11.1.1
+pybind11==2.13.4
+wheel
+setuptools
+
+# Core ML / HuggingFace
+transformers==4.56.0
+diffusers==0.32.0
+accelerate==1.1.1
+pytorch-lightning==1.9.5
+huggingface-hub==0.34.0
+huggingface_hub[cli]
+safetensors==0.4.5
+
+# Scientific Computing
+numpy==1.26.4
+scipy==1.14.1
+einops==0.8.0
+pandas==2.2.2
+torchmetrics==1.6.0
+
+# Image Processing
+pillow==11.3.0
+opencv-python==4.10.0.84
+imageio==2.36.0
+scikit-image==0.24.0
+matplotlib>=3.7
+
+# Background Removal & Super-Resolution
+rembg==2.0.65
+realesrgan==0.3.0
+basicsr==1.4.2
+onnxruntime==1.16.3
+
+# 3D Mesh Processing
+trimesh==4.4.7
+pymeshlab==2022.2.post3
+pygltflib==1.16.3
+xatlas==0.0.9
+open3d==0.18.0
+
+# Configuration & Logging
+omegaconf==2.3.0
+pyyaml==6.0.2
+configargparse==1.7
+loguru==0.7.3
+tqdm==4.67.1
+psutil==6.0.0
+
+# Web / API (optional, for demo)
+gradio==5.33.0
+fastapi==0.115.12
+uvicorn==0.34.3
+pydantic==2.10.6
+
+# GPU Acceleration (requires CUDA 12.x)
+cupy-cuda12x==13.4.1
+
+# Blender Python API
+bpy==4.2.0
+
+# Misc
+timm
+torchdiffeq
+pythreejs
+deepspeed
