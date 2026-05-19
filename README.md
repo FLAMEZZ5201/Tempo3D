@@ -2,10 +2,14 @@
 
 Official implementation of **Tempo3D: Efficient Temporal-Aware Fine-Tuning and Multi-View Latent Aggregation for 3D Generation** (ACM TOG / SIGGRAPH 2026).
 
-> Huizhi Zhu, Jiongming Qin, Yusen Wang, Chunxia Xiao  
-> Wuhan University &nbsp;·&nbsp; Dongfeng Motor Corp. R&D Institute
+<div align="center">
+
+Huizhi Zhu, Jiongming Qin, Yusen Wang, Chunxia Xiao  
+Wuhan University &nbsp;·&nbsp; Dongfeng Motor Corp. R&D Institute
 
 [[Project Page](https://hzlabx.github.io/Tempo3D/)] &nbsp;·&nbsp; [[Paper](https://hzlabx.github.io/Tempo3D/static/Tempo3D.pdf)] &nbsp;·&nbsp; [[Model](https://huggingface.co/FLAMEZZ/Tempo3D-weights)] &nbsp;·&nbsp; [[Dataset](https://huggingface.co/datasets/FLAMEZZ/TempoDetail)]
+
+</div>
 
 ---
 
@@ -84,10 +88,10 @@ To download manually:
 
 ```bash
 pip install huggingface_hub
-python -c "from huggingface_hub import snapshot_download; snapshot_download('tencent/Hunyuan3D-2.1', local_dir='./weights/Hunyuan3D-2.1')"
+python -c "from huggingface_hub import snapshot_download; snapshot_download('tencent/Hunyuan3D-2.1', local_dir='./weights/tencent/Hunyuan3D-2.1')"
 ```
 
-If downloaded locally, pass `--model_path ./weights/Hunyuan3D-2.1` to the inference script.
+If downloaded locally, pass `--model_path ./weights/tencent/Hunyuan3D-2.1` to the inference script.
 
 ### TS-LoRA Weights
 
@@ -99,7 +103,7 @@ Expected file layout:
 
 ```
 weights/
-├── Hunyuan3D-2.1/          # local base model
+├── tencent/Hunyuan3D-2.1/  # local base model
 ├── lora_weights.pt         # TS-LoRA checkpoint
 └── cond_token.pt           # learnable token
 ```
@@ -108,7 +112,7 @@ weights/
 
 ## TempoDetail Dataset
 
-TempoDetail is a curated dataset of 2,000 high-quality 3D assets used to train Tempo3D.
+TempoDetail is a curated dataset of 2,000 high-quality 3D assets.
 
 **Download:** [FLAMEZZ/TempoDetail](https://huggingface.co/datasets/FLAMEZZ/TempoDetail)
 
