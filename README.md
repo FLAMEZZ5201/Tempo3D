@@ -254,4 +254,4 @@ For technical questions, please contact [zhuhuizhi@whu.edu.cn](mailto:zhuhuizhi@
 
 ## Acknowledgements
 
-This project builds upon [Hunyuan3D-2.1](https://github.com/Tencent/Hunyuan3D-2). We thank Tencent for open-sourcing their work.
+This project builds upon [Hunyuan3D-2.1](https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1). We thank Tencent for open-sourcing their work.
